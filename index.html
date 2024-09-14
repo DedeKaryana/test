@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tugas 15</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">Kursus DGital</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Beranda</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="tampil.php" class="nav-item nav-link">Data Siswa</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jurusan</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="team.html" class="dropdown-item">Komputer</a>
+                                <a href="testimonial.html" class="dropdown-item">Bahasa Asing</a>
+                                <a href="404.html" class="dropdown-item">Akuntansi</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">                        
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Daftar Hadir</a>
+                            <div class="dropdown-menu m-0">
+                                
+                                
+                                <a href="https://forms.gle/sDFBJbLPsUSY4jor6" class="dropdown-item">Kelas Web Develover</a>  
+                    
+                                <a href="testimonial.html" class="dropdown-item">Kelas Didital Marketing</a>
+                                <a href="404.html" class="dropdown-item">Kelas Akuntansi</a>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Login</a>
+                </div>
+            </nav>
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5 align-items-end">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Bandung AI CAMP</h1>
+                            <p class="text-white pb-3 animated slideInDown">Pandu Ibu Indonesia Berpancasila Penuh Cinta</p>
+                            <a href="data.html" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Daftar Kursus</a>
+                            <a href="cetak1_id.php" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Cetak Kartu</a>
+                                                  
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/garuda.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Informasi<span></span></p>
+                    <h1 class="text-center mb-5">Artikel Pendidikan</h1>
+                </div>
+
+        <!-- Feature Start -->
+      
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            
+                            <img class="img-fluid rounded-circle mb-4" src="img/artikel.png" alt="">
+                            <h5 class="mb-3">Artificial Intelligence dan Pemrosesan Bahasa Alami dan Konten Kreatif
+                                </h5>
+                            <p class="m-0">"Artificial Intelligence (AI) adalah bidang ilmu di mana orang-orang menciptakan algoritma "cerdas" yang dapat "belajar" dari data. Algoritma ini mampu mengenali pola, membuat prediksi, dan mengambil keputusan berdasarkan data yang dipelajarinya. Kursus ini berfokus pada Generative AI (Gen AI), yaitu jenis AI yang mampu menciptakan konten baru, seperti halnya manusia.
+                                Meskipun Gen AI sangat berguna, mereka memerlukan arahan dari manusia tentang apa yang harus dilakukan. Seringkali, Gen AI seperti karyawan baru di perusahaan yang sangat mampu, tetapi membutuhkan instruksi yang jelas untuk bekerja dengan baik. Kemampuan untuk memberikan instruksi yang tepat kepada Gen AI adalah keterampilan yang sangat kuat.
+                                Anda dapat menginstruksikan Gen AI dengan mengirimkan apa yang disebut sebagai prompt, yang biasanya berupa instruksi teks (misalnya, "Berikan saya 10 nama untuk brand sepatu"). Gen AI yang dapat membaca dan menulis teks disebut sebagai large language models (LLMs).                            
+                                Dunia kecerdasan buatan sangatlah luas dan beragam, mencakup ribuan bahkan jutaan model yang berbeda. Model-model ini memiliki berbagai kemampuan dan aplikasi yang bervariasi. Terdapat dua jenis utama model AI: generatif dan discriminative. Generative AI diciptakan untuk menciptakan output baru seperti gambar, musik, dan teks, sementara discriminative AI dirancang untuk mengklasifikasikan atau membedakan berbagai masukan. Generative AI memiliki peran penting dalam teknik prompt engineering karena kemampuannya untuk menghasilkan output baru berdasarkan instruksi atau prompt tertentu. Dalam kursus ini, akan difokuskan pada ChatGPT dan model Large Language Models (LLMs) lainnya karena kemampuan mereka yang canggih dalam menerima instruksi dan menghasilkan respon yang relevan."(by Yoga febriano).</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <img class="img-fluid rounded-circle mb-4" src="img/artikel1.png" alt="">
+                           
+                            <h5 class="mb-3">Introduction to ChatGPT</h5>
+                            <p class="m-0">Apa Itu ChatGPT?... ChatGPT adalah sebuah model bahasa AI yang dilatih menggunakan sejumlah 
+                                besar data teks untuk menghasilkan respons bahasa alami dalam gaya percakapan. 
+                                Bisa diibaratkan seperti "jin" yang mampu memahami dan menjawab berbagai pertanyaan atau permintaan dalam bahasa yang alami dan mudah dimengerti.
+                            </p>
+                            <p class="m-2">
+                                Manfaat Utama ChatGPT
+                                Menghemat Waktu: ChatGPT dapat merespons dengan cepat dan efisien, menghemat waktu yang biasanya diperlukan untuk mencari informasi atau menyusun teks.
+                                Ekstensi ke Bidang Lain: Dapat membantu dalam bidang di luar keahlian pengguna, memungkinkan untuk mendapatkan ide-ide baru dengan cepat dan mengulangi proses lebih efektif.
+                                emanfaatan yang Beragam: Dari sintesis informasi hingga pembuatan konten dan penelitian, ChatGPT dapat digunakan dalam berbagai cara yang mendukung produktivitas dan kreativitas. (by Yoga febriano)
+                            </p>
+                            <p class="m-2">
+                                Jenis-Jenis Output Utama ChatGPT
+                                Sintesis Informasi: Meringkas sejumlah besar konten menjadi bentuk yang ringkas dan mudah dipahami.
+                                Pembuatan Konten dan Salinan: Menghasilkan konten baru untuk topik dan tujuan tertentu.
+                                Pembelajaran dan Penelitian: Menjawab pertanyaan yang sangat spesifik dengan informasi yang relevan.
+                                Pengkodean: Menghasilkan kode, memberikan informasi tentang konsep pemrograman dan API, serta membantu debugging.(by Yoga febriano)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                          
+                            <img class="img-fluid rounded-circle mb-4" src="img/artikel2.png" alt="">
+                            <h5 class="mb-3">UI/UX dan Figma</h5>
+                            <p class="m-0">Apa Itu Figma?
+                                Figma adalah alat desain berbasis web yang digunakan untuk membuat desain antarmuka pengguna (UI) dan prototipe interaktif. Figma terkenal karena kemampuannya mendukung kolaborasi tim secara real-time, yang memungkinkan banyak desainer untuk bekerja pada proyek yang sama secara bersamaan.</p>
+                            <p class="m-3">Mengapa Figma?
+                                Cross-Platform: Figma dapat digunakan di Windows, macOS, dan bahkan di browser web, membuatnya sangat fleksibel.
+                                Integrasi dengan Alat Lain: Figma terintegrasi dengan berbagai alat lain seperti Slack, Jira, dan Zeplin, mempermudah workflow tim.
+                                Komunitas dan Resources: Tersedia banyak resources, template, dan plugin yang dibuat oleh komunitas untuk mempercepat proses desain.</p>
+                        
+                                <p class="m-3">MFitur Utama:
+                                    Color Palette Generator: Plugin seperti "Color Hunt" atau "Coolors" membantu Anda menghasilkan palet warna yang harmonis dan sesuai dengan tema desain yang Anda inginkan.
+                                    Typography Suggestions: Plugin seperti "Fontjoy" atau "Type Scale" memberikan saran tipografi yang sesuai, termasuk kombinasi font yang serasi dan ukuran huruf yang proporsional.
+                                    Contoh Penggunaan:
+                                    Memilih skema warna untuk situs web atau aplikasi mobile, di mana plugin memberikan beberapa opsi warna yang komplementer dan sesuai dengan brand.(by Reyhan Ariq Syahalam)</p>
+                                                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+       
+ <!-- Newsletter Start -->
+ <div class="container-xxl bg-primary newsletter py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-1 px-lg-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <p class="section-title text-white justify-content-center"><span></span>Satu Jari Untuk Semua<span></span></p>
+                <h1 class="text-center text-white mb-4">Stay Always In Touch</h1>
+                <p class="text-white mb-4">Semua penemuan teknologi terbesar yang diciptakan oleh manusia - pesawat terbang, mobil, komputer - tidak banyak berbicara tentang kecerdasannya, tetapi berbicara banyak tentang kemalasannya. - Mark Kennedy (Penulis)
+               </p>
+                  </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-search fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Web Development Bandung AI Camp</h5>
+                            <p class="m-0">Pelajari cara mengintegrasikan kecerdasan buatan dalam pengembangan web untuk menciptakan situs yang lebih interaktif dan responsif. Tingkatkan keterampilan coding Anda dengan teknologi AI terkini!</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-laptop-code fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Web Design & Multimedia/Kreatif</h5>
+                            <p class="m-0">"Eksplorasi potensi AI dalam dunia multimedia dan kreatif. Dapatkan keterampilan untuk menciptakan karya yang inovatif dan out-of-the-box menggunakan teknologi AI."</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Social Media </h5>
+                            <p class="m-0">Gunakan dengan Bijak</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-mail-bulk fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Email Marketing</h5>
+                            <p class="m-0">Hubungi Bagian Pemasaran</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-thumbs-up fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">PPC Advertising</h5>
+                            <p class="m-0">Infografis</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fab fa-android fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">App Development</h5>
+                            <p class="m-0">App Development atau pengembangan aplikasi, merujuk pada proses pembuatan perangkat lunak untuk digunakan pada perangkat mobile seperti ponsel pintar dan tablet. Dalam era digital yang modern ini, aplikasi mobile telah menjadi bagian integral dari kehidupan kita, memudahkan akses informasi, hiburan, dan solusi bisnis di ujung jari pengguna. Dengan semakin berkembangnya teknologi, pengembangan aplikasi terus menjadi fokus utama bagi para pengembang dan perusahaan teknologi.</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Newsletter Start -->
+        
+        
+        <!-- Projects Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Latihan Proyek Web<span></span></p>
+                    <h1 class="text-center mb-5">Desain Proyek Latihan </h1>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="mx-2 active" data-filter="*">All</li>
+                            <li class="mx-2" data-filter=".first">Web Design</li>
+                            <li class="mx-2" data-filter=".second">Graphic Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4 portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI / UX Design</p>
+                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI / UX Design</p>
+                                <h5 class="lh-base mb-0">Belajar Dunia Digital </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI / UX Design</p>
+                                <h5 class="lh-base mb-0">Belajar Dunia Digital</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI / UX Design</p>
+                                <h5 class="lh-base mb-0">Belajar Dunia Digital</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI / UX Design</p>
+                                <h5 class="lh-base mb-0">Belajar Dunia Digitalt</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI / UX Design</p>
+                                <h5 class="lh-base mb-0">Belajar Dunia Digital</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <p class="section-title text-secondary justify-content-center"><span></span>Testimonial<span></span></p>
+                <h1 class="text-center mb-5">Bagaimana Pendapat Anda Belajar Daring di Bandung AI Camp!</h1>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>
+                            Kelas ini sangat menarik, fokus sebagai Front-End Web disini diajarkan hanyak bagaimana mengoptimasi performa website, hal ini berkaitan dengan materi sangat lengkap dan mudah dipahami, reviewer selalu memberikan saran agar dapat menuliskan kode dengan baik saat mengerjakan submission, kelas ini sangat cocok untuk 
+                            yang ingin memperdalam skill Front End Web Development. Sangat direkomendasikan, terima kasih woWWcoding!.
+                          </p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/team-1.jpg" style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Dede Karyana</h5>
+                                <span>Peserta Web Dev BDG AI Camp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Seni menantang teknologi, dan teknologi menginspirasi seni. Web Developer Expert saya belajar bagaimana membuat front-end web mulai dari mempersiapkan konsep dasar, melakukan testing dan belajar meningkatkan performa web. Terima kasih Bandung AI Camp untuk Dicoding OKE (Optimis Kreatif, Adukatif), materinya sangat bagus dan menarik YES (Yakin Edukatif Sukses).
+                           </p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/team-2.jpg" style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Dede Karyana</h5>
+                                <span>Peserta Bandung AI Camp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>
+                            Internet telah mengubah segalanya. Kita berharap untuk mengetahui segalanya 
+                            secara instan. Jika Anda tidak memahami komunikasi digital, Anda berada pada posisi yang kurang menguntungkan. Terjun ke dunia Web Development saya pertama kali belajar HTML, CSS, JS, PHP/d. Memperoleh kesempatan GRATIS BDG AI Camp rasanya sangat senang dan bangga. Berkat Web Develoment dan masih banyak lainnya dimana itu saling melengkapi untuk dapat membangun web profesional melalui 
+                            teknologi yang ada saat ini. Terimakasih BDG AI Camp /SANBER Code woWWWDicoding. Developer Handal Untuk Indonesia Digital.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/team-3.jpg" style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Dede Karyana</h5>
+                                <span>Peserta Web Dev BDG Ai Camp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Kelas Kami<span></span></p>
+                    <h1 class="text-center mb-5">Our Team Kelas Bandung AI CAMP</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
+                                <h5>Dede Karyana</h5>
+                                <span>Peserta BDG AI Camp</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/mentor.png" alt="">
+                                <h5>Kak Ariq</h5>
+                                <span>Mentor Web Dev Bandung Ai Camp</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
+                                <h5>Dede Karyana</h5>
+                                <span>Peserta BDG AI Camp</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Alamat<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Kabupaten Sumedang</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>0811207798</p>
+                        <p><i class="fa fa-envelope me-3"></i>dede.karyana@mail.go.id</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Foto Proyek<span></span></p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Mutiara Kata<span></span></p>
+                        <p>Perahuku tidak sepadan. Dia ingin mendekorasi ruangan dengan santai, bukan rubah</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Dede Belajar</a>, All Right Reserved. 
+							
+                        Designed By <a class="border-bottom" href="#">WYSIWYG</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Beranda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
